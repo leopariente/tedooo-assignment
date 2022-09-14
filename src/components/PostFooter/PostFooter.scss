@@ -1,0 +1,63 @@
+.interactons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 24px;
+    gap: 8px;
+
+    width: 1098px;
+    height: 20px;
+
+    .likes {
+        width: 952px;
+        height: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: start;
+        color: #737877;
+    }
+
+    .comments {
+        width: fit-content;
+        height: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #737877;
+    }
+}
+.buttons-div {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 307px;
+    width: 1120px;
+    height: 40px;
+}
+
+.click-div {
+    display: inline-block;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+.click-div:hover {
+    cursor: pointer;
+    background-color: #c3c7c6;
+}
+
+hr {
+    width: 1072px;
+    border: 1px solid #e9eaea;
+}
+svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}

@@ -1,3 +1,5 @@
+.post-footer-container {
+    width: 100%;
 .interactons {
     display: flex;
     flex-direction: row;
@@ -5,11 +7,11 @@
     padding: 0px 0px 0px 24px;
     gap: 8px;
 
-    width: 1098px;
+    width: 100%;
     height: 20px;
 
     .likes {
-        width: 952px;
+        width: 85%;
         height: 20px;
         font-style: normal;
         font-weight: 400;
@@ -34,7 +36,7 @@
     align-items: center;
     padding: 0px;
     gap: 307px;
-    width: 1120px;
+    width: 100%;
     height: 40px;
 }
 
@@ -53,11 +55,12 @@
 }
 
 hr {
-    width: 1072px;
+    width: 100%;
     border: 1px solid #e9eaea;
 }
 svg {
     height: 20px;
     width: 20px;
     margin-right: 5px;
+}
 }

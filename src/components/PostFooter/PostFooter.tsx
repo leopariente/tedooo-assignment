@@ -8,7 +8,6 @@ const PostFooter = (props: PostProps) => {
 
     // Sets the state of the like to determine the color of the like icon
     const handleClick = () => {
-        console.log("use state")
         like ? setLike(false) : setLike(true);
     }
 
@@ -31,8 +30,8 @@ const PostFooter = (props: PostProps) => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M10.315 1.695A.75.75 0 0 1 11 1.25 3.75 3.75 0 0 1 14.75 5v3.25h4.906a2.75 2.75 0 0 1 2.745 3.162l-1.38 9a2.75 2.75 0 0 1-2.745 2.338H4A2.75 2.75 0 0 1 1.25 20v-7A2.75 2.75 0 0 1 4 10.25h2.513l3.802-8.555ZM7.75 11.16l3.716-8.36A2.25 2.25 0 0 1 13.25 5v4c0 .414.336.75.75.75h5.669a1.25 1.25 0 0 1 1.25 1.437l-1.38 9a1.25 1.25 0 0 1-1.25 1.063H7.75V11.16Zm-1.5 10.09v-9.5H4A1.25 1.25 0 0 0 2.75 13v7A1.25 1.25 0 0 0 4 21.25h2.25Z"
               fill={like ? "blue" : "#737877"}
             ></path>

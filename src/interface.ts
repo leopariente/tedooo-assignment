@@ -6,12 +6,12 @@ export interface Post {
   shopName?: string;
   shopId?: string;
   images: string[];
-  comments: Number;
+  comments: number;
   date: string;
   text: string;
-  likes: Number;
-  didLike: Boolean;
-  premium: Boolean;
+  likes: number;
+  didLike: boolean;
+  premium: boolean;
 }
 
 export interface PostProps {

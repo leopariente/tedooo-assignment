@@ -10,7 +10,7 @@ const Post = (props: PostProps) => {
 
   // Gets the first 2 images of the post, and sets the image state.
   useEffect(() => {
-    let images = [];
+    const images = [];
     for (let i = 0; i < props.post.images.length; i++) {
       if (images.length < 2) {
         images.push(props.post.images[i]);
@@ -23,9 +23,9 @@ const Post = (props: PostProps) => {
     <div className="post-container">
       <PostHeader post={props.post} />
       <div className="image-div">
-      {images?.map((image: string) => (
-        <img src={image} alt="image" />
-      ))}
+        {images?.map((image: string) => (
+          <img src={image} alt="image" />
+        ))}
       </div>
       <PostFooter post={props.post}/>
     </div>

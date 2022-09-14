@@ -1,0 +1,11 @@
+version: '3.8'
+services: 
+  tedooo: 
+   build: .
+   ports: 
+    - "3000:3000"
+   volumes:
+    - "./:/app/tedooo"
+   stdin_open: true
+   tty: true
+

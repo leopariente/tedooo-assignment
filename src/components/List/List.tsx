@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroller";
 import { Post as TypePost } from "../../interface";
 import Post from "../Post/Post";
@@ -16,7 +16,7 @@ const List = () => {
     }
   };
 
-  // Fetches data 
+  // Fetches data
   useEffect(() => {
     async function fetchData() {
       const response = await fetch("https://dev.tedooo.com/feed.json");
@@ -33,11 +33,11 @@ const List = () => {
       hasMore={true || false}
     >
       <div className="list">
-      {posts.map((post: TypePost, i) => {
-        if (i < lastPostIndex) {
-          return <Post post={post} key={post.id} />;
-        }
-      })}
+        {posts.map((post: TypePost, i) => {
+          if (i < lastPostIndex) {
+            return <Post post={post} key={post.id} />;
+          } else return null;
+        })}
       </div>
     </InfiniteScroll>
   );

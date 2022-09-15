@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 
+// Nav bar component, displays on top of the screen
 const NavBar = () => {
   return (
     <div className="nav-bar">

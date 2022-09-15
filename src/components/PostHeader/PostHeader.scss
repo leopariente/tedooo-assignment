@@ -1,3 +1,9 @@
+@mixin font-settings {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
 .post-header-container {
     position: relative;
     display: flex;
@@ -32,14 +38,11 @@
             color: #282f2d;
         }
         .shop-name {
+            @include font-settings();
             width: 329px;
             height: 20px;
             width: fit-content;
             margin: 0%;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 20px;
             color: #0a66c2;
         }
         img {
@@ -55,13 +58,10 @@
         }
     }
     p {
+        @include font-settings();
         width: 95%;
         height: fit-content;
         margin-left: 15px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
         color: #000000;
         text-align: start;
     }

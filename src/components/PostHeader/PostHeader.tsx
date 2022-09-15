@@ -7,6 +7,7 @@ import "./PostHeader.scss";
 const PostHeader = (props: PostProps) => {
   const [timeAgo, setTimeAgo] = useState("");
 
+  // Helper function that gets the relative time using moments library
   const getRelativeTime = () => {
     const formattedTime = props.post.date.split("T")[0].split("-").join("");
     setTimeAgo((moment(formattedTime, "YYYYMMDD").fromNow()));
